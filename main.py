@@ -1,28 +1,4 @@
-days = [
-    'Понедельник',
-    'Вторник',
-    'Среда',
-    'Четверг',
-    'Пятница',
-    'Суббота',
-    'Воскресение',
-]
-
-school_objects = [
-    'Математика',
-    "Биология",
-    "Труд",
-    "Русск.лит.",
-    "Русск.яз",
-    "Бел.яз",
-    "Бел.лит",
-    "География",
-    "Информатика",
-    "Ин. яз.",
-    "История",
-    "Физ.к.и зд.",
-    "Искусство",
-]
+from data import school_objects, days, lesson_time
 
 timetable = [
 
@@ -78,5 +54,5 @@ timetable = [
 for i in range(len(timetable)):
     print(f'{days[i]}:')
     for j in range(len(timetable[i])):
-        print(f'\t{timetable[i][j]}')
+        print(f'\t{lesson_time[j]}:  {timetable[i][j]}')
     print()
