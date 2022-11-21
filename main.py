@@ -4,8 +4,9 @@ from timetable import timetable
 for i in range(len(timetable)):
     print(f'{days[i]}:')
     for j in range(len(timetable[i])):
-        if timetable[i][j] == ['выходной']:
-            print(f'\t{timetable[i][j]}')
+        obj_key = [key for key in timetable[i][j].keys()]
+        if obj_key:
+            print(f'\t{lesson_time[j]}:  {obj_key[0]}')
         else:
-            print(f'\t{lesson_time[j]}:  {timetable[i][j]}')
+            print(f'\tвыходной')
     print()
