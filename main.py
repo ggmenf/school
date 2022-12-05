@@ -1,10 +1,10 @@
-from menu.key_0 import good_by
-from menu.key_1 import key_1
-from menu.key_2 import key_2
-from menu.key_3 import key_3
-from menu.key_4 import create_new_timetable
-from menu.key_5 import key_5
-from menu.key_6 import key_6
+from menu.option_0 import good_by
+from menu.option_1 import option_1
+from menu.option_2 import option_2
+from menu.option_3 import option_3
+from menu.option_4 import create_new_timetable
+from menu.option_5 import option_5
+from menu.option_6 import option_6
 
 menu = {
     1: 'Посмотреть расписание',
@@ -28,17 +28,17 @@ def run_from_menu(any_menu):
     if option == 0:
         good_by()
     if option == 1:
-        key_1()
+        option_1()
     if option == 2:
-        key_2()
+        option_2()
     if option == 3:
-        key_3()
+        option_3()
     if option == 4:
         create_new_timetable()
     if option == 5:
-        key_5()
+        option_5()
     if option == 6:
-        key_6()
+        option_6()
 
 
 if __name__ == '__main__':
