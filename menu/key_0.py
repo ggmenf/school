@@ -1,2 +1,2 @@
-def key_0():
+def good_by():
     exit(0)

@@ -3,7 +3,7 @@ import pickle
 from data import days
 
 
-def create_new_table():
+def create_new_timetable():
     chest = {}
 
     for day in days:
