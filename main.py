@@ -1,5 +1,5 @@
 from menu.option_0 import good_by
-from menu.option_1 import option_1
+from menu.option_1 import print_timetable
 from menu.option_2 import option_2
 from menu.option_3 import option_3
 from menu.option_4 import create_new_timetable
@@ -28,7 +28,7 @@ def run_from_menu(any_menu):
     if option == 0:
         good_by()
     if option == 1:
-        option_1()
+        print_timetable()
     if option == 2:
         option_2()
     if option == 3:
@@ -42,9 +42,9 @@ def run_from_menu(any_menu):
 
 
 if __name__ == '__main__':
-    print()
-    print_menu(menu)
-    print()
     while True:
+        print()
+        print_menu(menu)
+        print()
         run_from_menu(menu)
         print()
