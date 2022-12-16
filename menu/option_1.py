@@ -23,10 +23,10 @@ def get_timetable_from_file(timetable_name):
 def print_timetable():
     print('Список расписаний:')
     for i in get_list_of_saved_timetables():
-        print(f'- {i.split(".")[0]}')
+        print(f' - {i.split(".")[0]}')
     print()
 
-    timetable_name = input('Введите имя сохранённого расписания: ')
+    timetable_name = input('Введите имя расписания: ')
 
     for day, items in get_timetable_from_file(timetable_name).items():
         print()
