@@ -4,7 +4,7 @@ from data import days
 
 
 def create_new_timetable():
-    chest = {}
+    timetable = {}
 
     for day in days:
         lessons = []
@@ -13,15 +13,11 @@ def create_new_timetable():
         for i in range(count_lessons):
             lesson = input(f'Введите урок {i + 1}: ')
             lessons.append(lesson)
-        chest[day] = lessons
+        timetable[day] = lessons
         print()
 
     file_name = input('Сохранить расписание как: ')
     with open(f'{file_name}.txt', 'wb') as f:
-        pickle.dump(chest, f)
+        pickle.dump(timetable, f)
 
-    with open(f'{file_name}.txt', 'rb') as f:
-        chest = pickle.load(f)
-
-    print()
-    print(chest)
+    print('Готово')
