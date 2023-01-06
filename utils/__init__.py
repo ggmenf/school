@@ -23,13 +23,14 @@ def print_timetable_names():
         return False
 
 
-def get_timetable(file_name):
+def get_timetable(timetable_name):
+    print()
     timetable = {}
     try:
-        with open(f"{file_name}.bin", 'rb') as f:
+        with open(f"{timetable_name}.bin", 'rb') as f:
             timetable = pickle.load(f)
     except FileNotFoundError as e:
-        print(f'ERROR: расписания \"{file_name}\" нет в списке.')
+        print(f'ERROR: расписания \"{timetable_name}\" нет в списке.')
     return timetable
 
 
