@@ -4,7 +4,7 @@ from menu.option_2 import option_2
 from menu.option_3 import option_3
 from menu.option_4 import create_new_timetable
 from menu.option_5 import option_5
-from menu.option_6 import option_6
+from menu.option_6 import remove_timetable
 
 menu = {
     1: 'Посмотреть расписание',
@@ -38,7 +38,7 @@ def run_from_menu(any_menu):
     if option == 5:
         option_5()
     if option == 6:
-        option_6()
+        remove_timetable()
 
 
 if __name__ == '__main__':
