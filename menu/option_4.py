@@ -1,5 +1,4 @@
-import pickle
-
+import utils
 from data import days
 
 
@@ -17,7 +16,7 @@ def create_new_timetable():
         print()
 
     file_name = input('Сохранить расписание как: ')
-    with open(f'{file_name}.txt', 'wb') as f:
-        pickle.dump(timetable, f)
+
+    utils.write_timetable_to_file(timetable, file_name)
 
     print('Готово')
