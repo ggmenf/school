@@ -1,2 +1,2 @@
-def option_5():
-    print('option-5')
+def edit_timetable():
+    pass

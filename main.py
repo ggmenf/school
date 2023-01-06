@@ -3,7 +3,7 @@ from menu.option_1 import print_timetable
 from menu.option_2 import option_2
 from menu.option_3 import option_3
 from menu.option_4 import create_new_timetable
-from menu.option_5 import option_5
+from menu.option_5 import edit_timetable
 from menu.option_6 import remove_timetable
 
 menu = {
@@ -36,7 +36,7 @@ def run_from_menu(any_menu):
     if option == 4:
         create_new_timetable()
     if option == 5:
-        option_5()
+        edit_timetable()
     if option == 6:
         remove_timetable()
 
