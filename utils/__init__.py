@@ -10,6 +10,13 @@ def get_list_of_saved_timetables():
     return list_of_saved_timetables
 
 
+def print_list_of_saved_timetables():
+    print('Список расписаний:')
+    for timetable_name in get_list_of_saved_timetables():
+        print(f' - {timetable_name.split(".")[0]}')
+    print()
+
+
 def get_timetable_from_file(timetable_name):
     timetable = {}
     try:
