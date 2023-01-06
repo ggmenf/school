@@ -8,7 +8,12 @@ def create_new_timetable():
     for day in days:
         lessons = []
         print(f'----> {day}:')
-        count_lessons = int(input('Введите количесво уроков: '))
+        while True:
+            try:
+                count_lessons = int(input('Введите количесво уроков: '))
+                break
+            except:
+                print('Ошибка: необходимо ввести число')
         for i in range(count_lessons):
             lesson = input(f'Введите урок {i + 1}: ')
             lessons.append(lesson)
