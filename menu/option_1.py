@@ -1,14 +1,11 @@
 from utils import (
     get_timetable_from_file,
-    get_list_of_saved_timetables
+    print_list_of_saved_timetables
 )
 
 
 def print_timetable():
-    print('Список расписаний:')
-    for timetable_name in get_list_of_saved_timetables():
-        print(f' - {timetable_name.split(".")[0]}')
-    print()
+    print_list_of_saved_timetables()
 
     timetable_name = input('Введите имя расписания: ')
 
