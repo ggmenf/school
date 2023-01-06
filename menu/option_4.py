@@ -22,6 +22,6 @@ def create_new_timetable():
 
     file_name = input('Сохранить расписание как: ')
 
-    utils.write_timetable_to_file(timetable, file_name)
+    utils.write_timetable(timetable, file_name)
 
     print('Готово')
