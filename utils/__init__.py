@@ -5,7 +5,7 @@ from glob import glob
 
 def get_list_of_timetable_names():
     list_of_saved_timetables = []
-    for timetable_name in glob("*.txt"):
+    for timetable_name in glob("*.bin"):
         list_of_saved_timetables.append(timetable_name)
     return list_of_saved_timetables
 

@@ -6,5 +6,5 @@ from utils import print_list_of_timetable_names
 def remove_timetable():
     print_list_of_timetable_names()
     timetable_name = input('Введите имя расписания: ')
-    os.remove(f'{timetable_name}.txt')
+    os.remove(f'{timetable_name}.bin')
     print(f'Расписание {timetable_name} удалено.')
