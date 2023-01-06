@@ -23,8 +23,12 @@ def print_menu(any_menu):
 
 
 def run_from_menu(any_menu):
-    option: int = int(input('Введи цифру из пункта меню: '))
-    print(f'выбрано: \"{option}. {any_menu[option]}\"')
+    while True:
+        try:
+            option: int = int(input('Введи цифру из пункта меню: '))
+            break
+        except:
+            pass
     if option == 0:
         good_by()
     if option == 1:
